@@ -7,7 +7,7 @@ func bubble(arr []int) []int {
 		// -1 because we look ahead by 1 item
 		for j := 0; j < n-i-1; j++ {
 			if arr[j] > arr[j+1] {
-				// no need for tmp variable when using multiple assignment
+				// no need for tmp variable when swapping using multiple assignment
 				arr[j], arr[j+1] = arr[j+1], arr[j]
 			}
 		}
