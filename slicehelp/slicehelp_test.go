@@ -20,7 +20,7 @@ func TestIntSlicesEqual(t *testing.T) {
 		t.Run(name, func(t *testing.T) {
 			actual := IntSlicesEqual(tc.inputArr1, tc.inputArr2)
 			if actual != tc.expected {
-				t.Fatalf("actual %v != expected %v", actual, tc.expected)
+				t.Fatalf("%s: actual %v != expected %v", name, actual, tc.expected)
 			}
 		})
 	}
