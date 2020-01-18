@@ -59,7 +59,6 @@ func Test_Max(t *testing.T) {
 			expected: 0,
 		},
 		"all the same positive": {
-			// (this would break if min starts at zero when zero is not actually in the collection)
 			input:    []int{3, 3, 3},
 			expected: 3,
 		},
@@ -105,7 +104,6 @@ func Test_MinMax(t *testing.T) {
 			expectedMax: 0,
 		},
 		"all the same positive": {
-			// (this would break if min starts at zero when zero is not actually in the collection)
 			input:       []int{3, 3, 3},
 			expectedMin: 3,
 			expectedMax: 3,
